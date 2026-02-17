@@ -1,4 +1,23 @@
 {
   "kind": "feature_evidence_report",
-  "features": []
+  "features": [
+    {
+      "featureId": "feature-update-the-contact-me-button-in-the-contact-section-frontend-src-app-tsx-so-that-clicking-it-opens-the-gmail-web-compose-page-addressed-to-randombookcreator-gmail-com-using-a-gmail-compose-url-not-a-mailto-link",
+      "featureTitle": "Update the “Contact Me” button in the Contact section (frontend/src/App.tsx) so that clicking it opens the Gmail web compose page addressed to randombookcreator@gmail.com using a Gmail compose URL (not a mailto link).",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    }
+  ]
 }

@@ -1,29 +1,41 @@
 {
   "kind": "build_request",
-  "title": "Apply profile-photo logo replacement",
+  "title": "Link Contact Me button to Gmail compose",
   "projectName": "Consuelo Portfolio",
   "priority": "normal",
-  "requirements": [],
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "text": "Update the “Contact Me” button in the Contact section (frontend/src/App.tsx) so that clicking it opens the Gmail web compose page addressed to randombookcreator@gmail.com using a Gmail compose URL (not a mailto link).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-msg-1"
+        ],
+        "quotes": [
+          "link the contact me to a draft in gmail to \"randombookcreator@gmail.com\"",
+          "the 2nd option",
+          "apply"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The “Contact Me” control is rendered as a link (e.g., Button with asChild <a>) that navigates to https://mail.google.com/mail/?view=cm&fs=1&to=randombookcreator@gmail.com.",
+        "The link opens in a new tab/window and includes rel=\"noopener noreferrer\".",
+        "No mailto: link is used anywhere for the “Contact Me” action.",
+        "The visible label remains “Contact Me” (English) and existing styling/spacing of the button remains consistent with the current design."
+      ]
+    }
+  ],
   "constraints": [
-    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
-    "Backend must remain a single Motoko actor in backend/main.mo; only create backend/migration.mo if state upgrades are required."
+    "Do not modify any files under frontend/src/components/ui (Shadcn UI components are read-only).",
+    "Do not change the backend (Motoko) for this request; this is a frontend-only link update."
   ],
   "nonGoals": [
-    "Adding new portfolio sections or changing existing section content beyond the requested logo swap.",
-    "Introducing external services or email integrations for the Contact section."
+    "Do not add any external email-sending integrations or backend email functionality.",
+    "Do not change any of the existing external gallery links in the Art Projects or Food Projects sections."
   ],
   "imageRequirements": {
     "required": [],
     "edits": []
-  },
-  "userProfileUpdate": {
-    "goalsToAdd": [],
-    "goalsToRemove": [],
-    "preferencesToAdd": [],
-    "preferencesToRemove": [],
-    "miscToAdd": [],
-    "miscToRemove": [],
-    "fieldsToSet": {},
-    "fieldsToDelete": []
   }
 }

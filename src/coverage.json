@@ -1,15 +1,27 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-17T17:00:55.019Z",
+  "generatedAt": "2026-02-17T18:04:53.366Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 0,
-    "implemented": 0,
-    "items": []
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-15",
+        "summary": "Update the “Contact Me” button in the Contact section (frontend/src/App.tsx) so that clicking it opens the Gmail web compose page addressed to randombookcreator@gmail.com using a Gmail compose URL (not a mailto link).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx"
+        ]
+      }
+    ]
   },
   "changedFiles": [
     "build-request.json",

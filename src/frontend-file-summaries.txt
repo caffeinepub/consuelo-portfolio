@@ -1,5 +1,5 @@
 {
-  "frontend/src/App.tsx": "Single-page portfolio application for Consuelo Ayala featuring hero with circular profile photo (now using WIN_20260211_10_47_53_Pro.png), bio, skills, art projects, food projects, education, and contact sections with vibrant multi-color styling, gradient text, glow effects, playful borders, animated badges, and colorful icon accents throughout.",
+  "frontend/src/App.tsx": "Single-page portfolio application for Consuelo Ayala featuring hero with circular profile photo, bio, skills, art projects, food projects, education, and contact sections with vibrant multi-color styling; the Contact Me button now links to Gmail web compose page addressed to randombookcreator@gmail.com opening in a new tab.",
   "frontend/src/index.css": "Global styles with a vibrant psychedelic color palette (electric lime, hot pink, coral, cyan) using OKLCH, layered psychedelic watercolor and blob overlay backgrounds, and enhanced typography with playful animations for a weird yet pretty aesthetic.",
   "frontend/tailwind.config.js": "Tailwind configuration extending the theme with colorful neon-inspired tokens, varied border radii (0.75rem to 3xl), glow shadows, custom animations (wiggle, bounce-slow), and multi-color accent utilities supporting the psychedelic design system."
 }

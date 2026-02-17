@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 9,
+  "projectStateVersion": 11,
   "summary": "Build a professional resume/portfolio website for Consuelo Ayala (traditional artist and amateur chef) featuring art projects and a food projects section, with an artistic logo and specific gallery links.",
   "architectural_notes": [
     "Content must reflect no work experience and high school graduate status; focus on skills, bio, and projects.",
@@ -121,6 +121,14 @@
         "REQ-14"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-contact-me-button-in-the-contact-section-frontend-src-app-tsx-so-that-clicking-it-opens-the-gmail-web-compose-page-addressed-to-randombookcreator-gmail-com-using-a-gmail-compose-url-not-a-mailto-link",
+      "title": "Update the “Contact Me” button in the Contact section (frontend/src/App.tsx) so that clicking it opens the Gmail web compose page addressed to randombookcreator@gmail.com using a Gmail compose URL (not a mailto link).",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -175,6 +183,12 @@
     {
       "id": "AR-9",
       "summary": "Replace the current artistic logo with the user’s provided profile picture (use as site logo in header/hero)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Update the “Contact Me” button/link to open a Gmail web compose draft addressed to randombookcreator@gmail.com (Gmail compose URL, not mailto)",
       "reqIds": [],
       "status": "pending"
     }

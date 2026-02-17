@@ -1,14 +1,14 @@
 {
-  "backend/main.mo": "Defines an empty Motoko actor with no methods.",
-  "feature_evidence.json": "Contains an empty feature evidence report structure.",
-  "frontend-file-summaries.txt": "Lists brief descriptions of key frontend files including App.tsx, global styles, and Tailwind config.",
-  "frontend/index.css": "Defines theme variables and base Tailwind styles for light and dark modes.",
-  "frontend/index.html": "Basic HTML entry point mounting the React app.",
-  "frontend/src/App.tsx": "Main React component rendering the colorful portfolio UI and sections.",
-  "frontend/src/hooks/useActor.ts": "React hook creating and refreshing an authenticated or anonymous backend actor.",
-  "frontend/src/hooks/useInternetIdentity.ts": "Implements Internet Identity auth context, login flow, and identity state handling.",
-  "frontend/src/index.css": "Global psychedelic-themed Tailwind CSS variables and layered background styles.",
-  "frontend/src/main.tsx": "Bootstraps React app with InternetIdentityProvider and React Query.",
-  "frontend/tailwind.config.js": "Tailwind config extending colors, radii, shadows, animations, and content paths.",
-  "project_state.json": "Defines the project’s state, requirements, and features for building Consuelo Ayala’s resume/portfolio website, including sections, constraints, and external project links. Contains architectural notes, existing features, and metadata for build planning."
+  "backend/main.mo": "Empty Motoko canister actor with no methods.",
+  "feature_evidence.json": "Metadata describing a feature request to update the Contact Me button to open a Gmail compose URL.",
+  "frontend-file-summaries.txt": "Prewritten summaries of key frontend files including App.tsx, index.css, and tailwind config.",
+  "frontend/index.css": "Tailwind base layer overriding theme tokens and applying light/dark mode variables with background and text styling.",
+  "frontend/index.html": "Basic HTML entry point mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "Main React component rendering a styled portfolio with hero, about, skills, projects, education, and contact sections.",
+  "frontend/src/hooks/useActor.ts": "React hook creating and managing a backend actor tied to Internet Identity authentication.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context and provider handling Internet Identity authentication, login flow, and stored identities.",
+  "frontend/src/index.css": "Psychedelic-themed Tailwind CSS variables and global styles with layered backgrounds and neon color palette.",
+  "frontend/src/main.tsx": "React entry file setting up React Query, Internet Identity provider, and rendering App.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme colors, radii, shadows, animations, and utility classes using OKLCH variables.",
+  "project_state.json": "Defines the project's current state and requirements for building Consuelo Ayala’s resume/portfolio website, including sections, constraints, and linked art/food project content. Lists existing features, architectural notes, and project metadata."
 }

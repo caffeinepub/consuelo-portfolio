@@ -1,6 +1,24 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Apply profile-photo logo replacement",
-  "requirements": []
+  "title": "Link “Contact Me” button to Gmail web compose",
+  "requirements": [
+    {
+      "id": "REQ-15",
+      "summary": "Change the Contact section “Contact Me” button to open a Gmail web compose link addressed to randombookcreator@gmail.com (no mailto) in a new tab with proper rel attributes.",
+      "acceptanceCriteria": [
+        "The “Contact Me” control is rendered as a link (e.g., Button with asChild <a>) that navigates to https://mail.google.com/mail/?view=cm&fs=1&to=randombookcreator@gmail.com.",
+        "The link opens in a new tab/window and includes rel=\"noopener noreferrer\".",
+        "No mailto: link is used anywhere for the “Contact Me” action.",
+        "The visible label remains “Contact Me” (English) and existing styling/spacing of the button remains consistent with the current design."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "In the Contact section, replace the current non-link <Button> with the shadcn-ui Button rendered as a link via asChild wrapping an <a> pointing to https://mail.google.com/mail/?view=cm&fs=1&to=randombookcreator@gmail.com, using target=\"_blank\" and rel=\"noopener noreferrer\". Keep the existing Button size and className to preserve styling/spacing, and keep the visible label as “Contact Me”. Verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
 }

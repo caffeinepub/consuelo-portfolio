@@ -279,9 +279,20 @@ function App() {
                   <p className="text-lg text-foreground font-medium">
                     I'm excited to explore opportunities in the art and food industries.
                   </p>
-                  <Button size="lg" className="gap-2 bg-gradient-to-r from-accent to-primary hover:from-primary hover:to-accent text-white font-bold shadow-accent-glow border-2 border-accent text-lg px-8 py-6">
-                    <Mail className="w-5 h-5" />
-                    Contact Me
+                  <Button 
+                    asChild 
+                    size="lg" 
+                    className="gap-2 bg-gradient-to-r from-accent to-primary hover:from-primary hover:to-accent text-white font-bold shadow-accent-glow border-2 border-accent text-lg px-8 py-6"
+                  >
+                    <a
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=randombookcreator@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2"
+                    >
+                      <Mail className="w-5 h-5" />
+                      Contact Me
+                    </a>
                   </Button>
                 </div>
               </CardContent>
