@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Build a professional resume/portfolio website for Consuelo Ayala (traditional artist and amateur chef) featuring art projects and a food projects section, with an artistic logo and specific gallery links.",
+  "architectural_notes": [
+    "Content must reflect no work experience and high school graduate status; focus on skills, bio, and projects.",
+    "Do not create a \"featured art pieces\" category; keep projects as art pieces plus a separate Food Projects section.",
+    "Site logo should be updated to use the user-provided profile picture image asset (replacing the custom art-forward logo)."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-professional-resume-portfolio-website-for-consuelo-ayala-with-clear-sections-hero-intro-bio-about-skills-projects-art-food-projects-and-contact-simple-contact-details-cta-without-external-email-integrations",
+      "title": "Create a single-page professional resume/portfolio website for Consuelo Ayala with clear sections: Hero/Intro, Bio/About, Skills, Projects (Art), Food Projects, and Contact (simple contact details/CTA without external email integrations).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-bio-about-section-using-the-provided-bio-text-verbatim-english-with-professional-typography-and-readable-layout",
+      "title": "Implement the Bio/About section using the provided BIO text verbatim (English), with professional typography and readable layout.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-skills-section-with-the-following-constrained-lists-only-artistic-mediums-watercolor-acrylic-graphic-culinary-skills-baking-stovetop-cooking-creative-skills-color-theory-attention-to-detail-creative-problem-solving-personal-strengths-self-motivated-continuous-learning-patience-dedication-creative-artistic-vision-kind-usually-very-optimistic",
+      "title": "Add a Skills section with the following constrained lists only: Artistic Mediums (Watercolor, Acrylic, Graphic), Culinary Skills (Baking, Stovetop Cooking), Creative Skills (Color Theory, Attention to Detail, Creative Problem Solving), Personal Strengths (Self-motivated, Continuous Learning, Patience, Dedication, Creative, Artistic Vision, Kind, Usually Very Optimistic).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-art-projects-section-where-the-featured-projects-are-art-pieces-and-include-two-externally-linked-project-cards-abstract-art-collection-linking-to-https-photos-app-goo-gl-dp3yhdpvjbr6qlj77-and-alcohol-marker-illustrations-linking-to-https-photos-app-goo-gl-5s7ktgtzb9rjvpbm7",
+      "title": "Create an Art Projects section where the featured projects are art pieces, and include two externally linked project cards: “Abstract Art Collection” linking to https://photos.app.goo.gl/dP3yhDpvjBr6QLj77 and “Alcohol Marker Illustrations” linking to https://photos.app.goo.gl/5s7KtgtZb9rjvpbM7.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-do-not-include-any-category-or-section-labeled-featured-art-pieces-anywhere-in-the-ui",
+      "title": "Do not include any category or section labeled “featured art pieces” anywhere in the UI.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-food-projects-section-with-an-externally-linked-entry-labeled-food-projects-that-links-to-https-photos-app-goo-gl-ziw3x1pqm3neocan9",
+      "title": "Create a Food Projects section with an externally linked entry labeled “Food Projects” that links to https://photos.app.goo.gl/Ziw3x1pQm3neoCaN9.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-and-apply-a-coherent-creative-visual-theme-appropriate-for-a-traditional-artist-and-amateur-chef-avoid-blue-purple-as-dominant-colors-including-consistent-typography-spacing-and-section-styling-across-the-site",
+      "title": "Design and apply a coherent, creative visual theme appropriate for a traditional artist and amateur chef (avoid blue/purple as dominant colors), including consistent typography, spacing, and section styling across the site.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-make-the-site-logo-more-artistic-by-adding-a-custom-art-forward-logo-asset-and-displaying-it-in-the-header-hero-area-alongside-the-name-consuelo-ayala",
+      "title": "Make the site logo more artistic by adding a custom, art-forward logo asset and displaying it in the header/hero area alongside the name “Consuelo Ayala.”",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-education-section-that-states-high-school-graduation-english-without-inventing-schools-dates-unless-explicitly-provided-by-the-user",
+      "title": "Add an Education section that states high school graduation (English), without inventing schools/dates unless explicitly provided by the user.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-s-overall-visual-theme-to-feel-weird-colorful-yet-pretty-while-keeping-it-cohesive-and-professional-for-a-portfolio",
+      "title": "Update the site’s overall visual theme to feel “weird, colorful, yet pretty” while keeping it cohesive and professional for a portfolio.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-revise-global-styling-tokens-css-variables-tailwind-color-usage-to-support-a-brighter-more-varied-color-palette-multiple-accent-colors-and-apply-it-consistently-across-components-card-badge-button-icons-separators",
+      "title": "Revise global styling tokens (CSS variables / Tailwind color usage) to support a brighter, more varied color palette (multiple accent colors) and apply it consistently across components (Card, Badge, Button, icons, separators).",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-replace-decorative-background-overlay-visuals-to-reinforce-the-weird-colorful-yet-pretty-aesthetic-without-reducing-readability-keep-a-subtle-overlay-or-blending-to-preserve-legibility",
+      "title": "Add/replace decorative background/overlay visuals to reinforce the “weird, colorful, yet pretty” aesthetic without reducing readability (keep a subtle overlay or blending to preserve legibility).",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-new-static-logo-image-asset-from-the-uploaded-profile-photo-win-20260211-10-47-53-pro-png-and-add-it-under-frontend-public-assets-generated",
+      "title": "Create a new static logo image asset from the uploaded profile photo (WIN_20260211_10_47_53_Pro.png) and add it under frontend/public/assets/generated.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-hero-header-logo-in-frontend-src-app-tsx-to-use-the-new-profile-photo-logo-asset-instead-of-assets-generated-logo-consuelo-ayala-dim-512x512-png-and-ensure-the-logo-displays-cleanly-in-a-circular-presentation-consistent-with-the-existing-hero-styling",
+      "title": "Update the Hero/Header logo in frontend/src/App.tsx to use the new profile-photo logo asset instead of /assets/generated/logo-consuelo-ayala.dim_512x512.png, and ensure the logo displays cleanly in a circular presentation consistent with the existing hero styling.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a professional resume/portfolio website for Consuelo Ayala (traditional artist and amateur chef), tailored for a high school graduate with no work experience",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add skills sections with constraints: Artistic Mediums (watercolor, acrylic, graphic), Culinary Skills (baking, stovetop cooking), Creative Skills (color theory, attention to detail, creative problem solving), Personal Strengths (self-motivated, continuous learning, patience, dedication, creative, artistic vision, kind, usually optimistic)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add Bio/About section using provided BIO text",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add Projects section where featured projects are art pieces, and explicitly do not include a \"featured art pieces\" category",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Add external links: \"Abstract Art Collection\" -> https://photos.app.goo.gl/dP3yhDpvjBr6QLj77 and \"Alcohol Marker Illustrations\" -> https://photos.app.goo.gl/5s7KtgtZb9rjvpbM7",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Create a Food Projects section and link it to https://photos.app.goo.gl/Ziw3x1pQm3neoCaN9",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Design/update the site logo to be more artistic",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Update the site aesthetic to be weird, colorful, yet pretty (overall visual theme refresh)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Replace the current artistic logo with the user’s provided profile picture (use as site logo in header/hero)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Consuelo Portfolio",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

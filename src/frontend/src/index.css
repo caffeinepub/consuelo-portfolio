@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 1.5rem;
+        
+        /* Weird, colorful, yet pretty palette - psychedelic retro vibes */
+        /* Hot pink/magenta background with high chroma */
+        --background: 0.96 0.03 330;
+        --foreground: 0.20 0.04 280;
+        
+        --card: 0.99 0.02 60;
+        --card-foreground: 0.25 0.04 280;
+        
+        --popover: 0.99 0.02 60;
+        --popover-foreground: 0.25 0.04 280;
+        
+        /* Electric lime green primary */
+        --primary: 0.75 0.22 130;
+        --primary-foreground: 0.15 0.03 140;
+        
+        /* Bright coral/orange secondary */
+        --secondary: 0.78 0.20 45;
+        --secondary-foreground: 0.20 0.03 50;
+        
+        --muted: 0.88 0.08 320;
+        --muted-foreground: 0.45 0.05 300;
+        
+        /* Hot pink accent */
+        --accent: 0.70 0.25 340;
+        --accent-foreground: 0.98 0.02 330;
+        
+        --destructive: 0.60 0.24 15;
+        --destructive-foreground: 0.98 0.02 330;
+        
+        --border: 0.75 0.15 280;
+        --input: 0.85 0.08 300;
+        --ring: 0.70 0.25 340;
+        
+        /* Vibrant chart colors for icons and accents */
+        --chart-1: 0.65 0.26 160;  /* Cyan/turquoise */
+        --chart-2: 0.72 0.24 50;   /* Sunny orange */
+        --chart-3: 0.68 0.22 280;  /* Electric purple */
+        --chart-4: 0.80 0.20 85;   /* Yellow-green */
+        --chart-5: 0.70 0.23 10;   /* Red-orange */
+        
+        --success: 0.70 0.20 145;
+        --success-foreground: 0.15 0.03 150;
+        
+        --warning: 0.75 0.22 70;
+        --warning-foreground: 0.20 0.03 75;
+    }
+
+    .dark {
+        /* Dark mode with neon glow vibes */
+        --background: 0.15 0.04 280;
+        --foreground: 0.95 0.03 330;
+        
+        --card: 0.20 0.05 270;
+        --card-foreground: 0.95 0.03 330;
+        
+        --popover: 0.18 0.05 275;
+        --popover-foreground: 0.95 0.03 330;
+        
+        /* Neon lime green */
+        --primary: 0.80 0.24 130;
+        --primary-foreground: 0.10 0.03 140;
+        
+        /* Bright coral */
+        --secondary: 0.75 0.22 45;
+        --secondary-foreground: 0.10 0.02 50;
+        
+        --muted: 0.28 0.06 280;
+        --muted-foreground: 0.65 0.08 300;
+        
+        /* Hot pink accent */
+        --accent: 0.75 0.26 340;
+        --accent-foreground: 0.10 0.03 345;
+        
+        --destructive: 0.65 0.26 15;
+        --destructive-foreground: 0.95 0.03 330;
+        
+        --border: 0.35 0.10 280;
+        --input: 0.30 0.08 280;
+        --ring: 0.75 0.26 340;
+        
+        /* Neon chart colors */
+        --chart-1: 0.70 0.28 160;
+        --chart-2: 0.78 0.26 50;
+        --chart-3: 0.72 0.24 280;
+        --chart-4: 0.85 0.22 85;
+        --chart-5: 0.75 0.25 10;
+        
+        --success: 0.75 0.22 145;
+        --success-foreground: 0.10 0.03 150;
+        
+        --warning: 0.80 0.24 70;
+        --warning-foreground: 0.10 0.03 75;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        background-image: url('/assets/generated/watercolor-texture-bg-weird.dim_1920x1080.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    
+    /* Layered background with psychedelic overlay */
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: oklch(var(--background) / 0.75);
+        z-index: -2;
+    }
+    
+    body::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('/assets/generated/weird-blobs-overlay.dim_1920x1080.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.15;
+        mix-blend-mode: screen;
+        z-index: -1;
+        pointer-events: none;
+    }
+}
+
+@layer components {
+    /* Enhanced typography with playful weights */
+    h1, h2, h3, h4, h5, h6 {
+        @apply tracking-tight;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+    }
+    
+    /* Smooth transitions with bounce */
+    a, button {
+        @apply transition-all duration-300;
+    }
+    
+    /* Fun hover effects */
+    a:hover, button:hover {
+        transform: translateY(-1px);
+    }
+}

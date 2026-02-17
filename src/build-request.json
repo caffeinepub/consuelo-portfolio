@@ -1,0 +1,29 @@
+{
+  "kind": "build_request",
+  "title": "Apply profile-photo logo replacement",
+  "projectName": "Consuelo Portfolio",
+  "priority": "normal",
+  "requirements": [],
+  "constraints": [
+    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
+    "Backend must remain a single Motoko actor in backend/main.mo; only create backend/migration.mo if state upgrades are required."
+  ],
+  "nonGoals": [
+    "Adding new portfolio sections or changing existing section content beyond the requested logo swap.",
+    "Introducing external services or email integrations for the Contact section."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

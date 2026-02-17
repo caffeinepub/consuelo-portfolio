@@ -1,0 +1,14 @@
+{
+  "backend/main.mo": "Defines an empty Motoko actor with no methods.",
+  "feature_evidence.json": "Contains an empty feature evidence report structure.",
+  "frontend-file-summaries.txt": "Lists brief descriptions of key frontend files including App.tsx, global styles, and Tailwind config.",
+  "frontend/index.css": "Defines theme variables and base Tailwind styles for light and dark modes.",
+  "frontend/index.html": "Basic HTML entry point mounting the React app.",
+  "frontend/src/App.tsx": "Main React component rendering the colorful portfolio UI and sections.",
+  "frontend/src/hooks/useActor.ts": "React hook creating and refreshing an authenticated or anonymous backend actor.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Implements Internet Identity auth context, login flow, and identity state handling.",
+  "frontend/src/index.css": "Global psychedelic-themed Tailwind CSS variables and layered background styles.",
+  "frontend/src/main.tsx": "Bootstraps React app with InternetIdentityProvider and React Query.",
+  "frontend/tailwind.config.js": "Tailwind config extending colors, radii, shadows, animations, and content paths.",
+  "project_state.json": "Defines the project’s state, requirements, and features for building Consuelo Ayala’s resume/portfolio website, including sections, constraints, and external project links. Contains architectural notes, existing features, and metadata for build planning."
+}
